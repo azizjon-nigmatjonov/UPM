@@ -1,0 +1,36 @@
+.TestSide {
+  min-height: 87vh;
+  background-color: #fff;
+  .loader {
+    min-height: 60vh;
+  }
+  .grid-area {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 16px;
+    padding: 16px;
+    overflow-y: scroll;
+    max-height: 72.8vh;
+  }
+  .bottom-btns {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-right: 75px;
+    border-top: 1px solid #e5e9ec;
+  }
+  .list-area {
+    .table {
+      border: none !important;
+      border-radius: 0px !important;
+    }
+    .CTableContainer {
+      padding: 0 !important;
+    }
+    .CTableContainer .table table td {
+      background-color: #fff;
+    }
+  }
+}

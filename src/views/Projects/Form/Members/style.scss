@@ -1,0 +1,67 @@
+.MemberCreateModal {
+  width: 850px;
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .form {
+    padding: 15px;
+
+    .form-elements {
+      max-height: calc(100vh - 245px);
+      overflow-y: auto;
+      display: flex;
+      gap: 100px;
+      padding: 0 20px;
+
+      .side {
+        flex: 1;
+      }
+    }
+
+    .btns-row {
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+  }
+}
+
+.MemberAddModal {
+  width: 500px;
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .form {
+    padding: 15px;
+
+    .form-elements {
+      max-height: calc(100vh - 245px);
+      overflow-y: auto;
+
+      .center {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .btns-row {
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+  }
+}

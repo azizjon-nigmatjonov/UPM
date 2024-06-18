@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  // transform: scale(0.8);
+  // transform-origin: 0 0;
+  // add prefixed versions too.
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.silver-bottom-border {
+  box-shadow: inset 0px -1px 0px #e5e9eb;
+}
+
+.silver-right-border {
+  box-shadow: inset -1px 0px 0px #e5e9eb;
+}
+
+.child-position-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drag-card-ghost {
+  transition: transform 0.18s ease;
+  transform: translateY(-10px);
+}
+
+.drag-card-ghost-drop {
+  transition: transform 0.18s ease-in-out;
+  transform: translateY(0);
+}
+
+.drag-cards-drop-preview {
+  background-color: rgba(150, 150, 200, 0.1);
+  border: 1px dashed #abc;
+  margin: 5px 35px 5px 5px;
+}
+
+.drag-row-drop-preview {
+  background-color: rgba(150, 150, 200, 0.1);
+  border: 1px dashed #abc;
+  margin: 5px;
+  min-height: 200px !important;
+}
+
+.react-tabs {
+  // -webkit-tap-highlight-color: transparent;
+  position: relative;
+
+  &__tab-list {
+    border-bottom: 1px solid rgb(231, 231, 231);
+    margin: 0 0 20px;
+    padding: 0;
+    display: flex;
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    border: none;
+    position: relative;
+
+    padding: 12px 16px;
+    cursor: pointer;
+
+    &--selected {
+      border-bottom: 2px solid #1890ff;
+      color: #1890ff;
+    }
+
+    &--disabled {
+      color: silver;
+      cursor: default;
+    }
+
+    &:focus {
+      box-shadow: none;
+      // border-color: none;
+      outline: none;
+
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   height: 5px;
+      //   left: -4px;
+      //   right: -4px;
+      //   bottom: -5px;
+      //   background: #fff;
+      // }
+    }
+  }
+
+  &__tab-panel {
+    display: none;
+
+    &--selected {
+      display: block;
+    }
+  }
+}
+
+.unselectable-component {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.drag-handler-btn {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.drag-handler-btn:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.hidden-element {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap {
+  gap: 10px;
+}
+
+.gap-2 {
+  gap: 20px;
+}
+
+.p-1 {
+  padding: 10px;
+}
+
+.p-2 {
+  padding: 20px;
+}
+
+.MuiInputLabel-root {
+  color:rgb(163, 159, 159) !important;
+  font-weight: 550 !important;
+  font-size: 14px !important;
+  position: absolute !important;
+  bottom: 20px !important;
+  margin-bottom: 20px !important;
+  padding-bottom: 20px !important;
+  top: 0px !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  // border: 1px solid #ccc !important;
+}
+
+.TTab {
+  .react-tabs__tab-list {
+    border-bottom: none;
+    margin-bottom: 0px !important;
+  }
+  .react-tabs__tab--selected {
+    color: #1890ff !important;
+    border-top: 3px solid #1890ff !important;
+    background-color: #fff !important;
+    border-bottom: none;
+    border-right: 1px solid #e8e9ec !important;
+    border-left: 1px solid #e8e9ec !important;
+  }
+  .ttab {
+    color: #6E8BB7;
+    border-top: 3px solid transparent;
+    background-color: transparent;
+    padding: 10px 30px;
+    list-style-type: none;
+    cursor: pointer;
+    border-right: none;
+    border-left: none;
+  }
+  .with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+.scrollable {
+  overflow-y: auto !important;
+  height: 73vh;
+}

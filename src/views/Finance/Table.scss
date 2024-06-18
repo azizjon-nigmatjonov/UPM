@@ -1,0 +1,46 @@
+.CTableHeadRow {
+  td {
+    white-space: nowrap;
+  }
+}
+
+.CTableRow {
+  td {
+    white-space: nowrap;
+  }
+}
+.tasks_cell {
+  overflow: hidden;
+  width: 160px;
+}
+.CTableContainer {
+  padding: 0 0 20px 0 !important;
+  border: none !important;
+}
+.table {
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+.date__holder {
+  position: relative;
+  width: 100%;
+
+  .finance__info {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 4px 12px;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .finance__date {
+    position: absolute;
+    top: 40px;
+    z-index: 2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,35 @@
+.RectangleIconButton {
+  border: 1px solid #e5e9eb;
+  border-radius: 6px;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.2s;
+
+  &.long {
+    gap: 8px;
+    padding: 0 8px;
+    width: auto;
+  }
+
+  &.primary:hover {
+    border-color: #0067f4;
+  }
+
+  &.error:hover {
+    border-color: #ff4842;
+  }
+
+  &.warning:hover {
+    border-color: #ffc107;
+  }
+
+  &.success:hover {
+    border-color: #1ac19d;
+  }
+}

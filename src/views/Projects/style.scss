@@ -1,0 +1,66 @@
+.ProjectsTable {
+  border: 1px solid #e5e9eb;
+  border-radius: 8px;
+  overflow: auto;
+  position: relative;
+  height: calc(100vh - 200px);
+
+  .smooth-dnd-draggable-wrapper:nth-of-type(odd) .table-row {
+    background-color: #f4f6fa91 !important;
+  }
+
+  .table-row {
+    display: grid;
+    grid-template-columns: 50px 85px 1fr 136px 80px;
+    cursor: pointer;
+    background-color: #fff;
+
+    &:hover {
+      background-color: rgba(#f5fbff, 1) !important;
+    }
+  }
+
+  .table-cell {
+    padding: 16px 16px 16px 12px !important;
+    border: 1px solid #e5e9eb;
+    margin: -1px 0 0 -1px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    // border-right: 1px solid #E5E9EB;
+  }
+  .icon_table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #table_description {
+    word-break: break-all;
+
+    span {
+      width: 104px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+  }
+
+  // .table-row .table-cell:last-child {
+  //   border-right: none;
+  // }
+
+  .table-head {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    .table-row {
+      background-color: #fff;
+    }
+  }
+}

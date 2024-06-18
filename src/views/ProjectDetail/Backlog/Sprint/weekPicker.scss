@@ -1,0 +1,62 @@
+.weekPicker {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    cursor: pointer;
+  
+    .range {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: #fff;
+      height: 36px;
+      border-radius: 4px;
+      // padding: 8px 16px 8px 12px;
+      width: 160px;
+    }
+  
+    .modal {
+      position: absolute;
+      bottom: -365px;
+      left: 0;
+      background: #fff;
+      border-radius: 6px;
+      border: 1px solid rgb(208, 208, 208);
+      padding: 5px;
+      z-index: 13;
+    }
+  }
+  
+  .mFlex {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 4px;
+  }
+  .date_picker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .line {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .date_content {
+      width: 242px;
+      display: inline-block;
+      border:1px solid #ccc;
+      height: 37px;
+      border-radius: 8px;
+      padding: 8px 0 0 0;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+  }

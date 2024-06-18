@@ -1,0 +1,142 @@
+
+
+.NotesPage {
+
+  .main-area {
+    padding: 20px;
+
+
+
+    .card {
+      width: 100%;
+      background-color: #fff;
+      overflow: auto;
+      display: flex;
+    }
+  }
+
+}
+
+.NotesList {
+  width: 300px;
+  height: calc(100vh - 152px);
+  overflow: auto;
+
+  .header {
+    padding: 12px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .list {
+    border-radius: 8px;
+    background-color: #ebf7ff7c;
+    margin: 10px;
+  }
+
+}
+
+.NoteRow {
+  padding: 12px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  cursor: pointer;
+  transition-duration: 0s;
+
+
+  &:hover {
+    background-color: rgba(98, 171, 255, 0.1);
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  &.active {
+    background-color: #0067F4;
+    color: #fff;
+    transition-duration: 0.3s;
+
+
+    &:hover {
+      background-color: #0067F4;
+    }
+  }
+}
+
+.NoteForm {
+  flex: 1;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+
+    .info-block {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2px 16px;
+      height: 65px;
+  
+      .dates {
+        display: flex;
+      }
+  
+      .date-block {
+        padding: 0 30px;
+  
+        .label {
+          color: #9aa6ac;
+        }
+      }
+    }
+  }
+
+  .content-block {
+    padding: 20px;
+    height: calc(100vh - 161px);
+    overflow: auto;
+
+    .form {
+      margin-bottom: 40px;
+    }
+
+    .preview {
+      padding: 20px;
+    }
+
+    .title-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        &.space-between {
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+
+        .label {
+          font-weight: bold;
+          margin-right: 20px;
+        }
+
+        .save-button {
+          margin-left: 10px;
+          height: 37px;
+        }
+      }
+  }
+}

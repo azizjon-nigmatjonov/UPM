@@ -1,0 +1,46 @@
+.container {
+  .filterBox {
+    background-color: white;
+    padding: 16px 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom: 1px solid rgba(145, 158, 171, 0.8);
+    .header {
+      font-size: 14px;
+      color: #303940;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .date {
+      margin-bottom: 10px;
+    }
+    .checkBox {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      label {
+        font-size: 12px;
+      }
+    }
+    .buttons {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+      gap: 1rem;
+    }
+    .reset {
+      border: 1px solid #e5e9eb;
+      color: red;
+      width: 100px;
+      margin-right: 10px;
+      padding: 8px 21.62px;
+    }
+    .search {
+      color: #fff;
+      width: 100px;
+
+      padding: 8px 21.62px;
+    }
+  }
+}

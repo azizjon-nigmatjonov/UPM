@@ -1,0 +1,115 @@
+.StatusGroup {
+  .group-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .status-list {
+    margin-bottom: 20px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    gap: 8px;
+    background: #ffffff;
+    box-shadow: inset 0px -1px 0px #e5e9eb;
+
+    .title-block {
+      padding: 10px 16px;
+      flex: 1;
+      border-radius: 6px;
+      margin-right: 8px;
+    }
+  }
+
+  .create-btn {
+    width: 100%;
+    border: 1px dashed silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 6px;
+    color: silver;
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+    &:hover {
+      color: #1890ff;
+      border-color: #1890ff;
+    }
+  }
+}
+
+.TaskTypesBlock {
+  flex: 2;
+  background-color: #fff;
+
+  .header {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.TaskTypeRow,
+.StatusTypeRow,
+.StatusRow {
+  padding: 7px 12px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+
+  .index {
+    padding: 0 10px;
+  }
+
+  .label {
+    flex: 1;
+    white-space: pre-wrap;
+  }
+
+  .btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.StatusTypeRow {
+  padding-left: 30px;
+  background-color: #ebf7ff;
+
+  &:hover {
+    background-color: #e3f3fd;
+  }
+}
+
+.StatusRow {
+  padding-left: 80px;
+  background-color: #fffeeb;
+
+  &:hover {
+    background-color: #fffdda;
+  }
+}
+
+.StatusTypeCreateRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 12px;
+}

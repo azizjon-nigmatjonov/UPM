@@ -1,0 +1,113 @@
+
+.Header {
+  width: 100%;
+  height: 56px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+
+  .left-side {
+    display: flex;
+    align-items: center;
+
+    .header-title {
+      margin-right: 20px;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600;
+      color:#1A2024;
+    }
+
+    .project-title {
+      color: #0067F4;
+      transition-duration: .3s;
+      font-weight: 600;
+      font-size: 17px;
+
+      &:hover {
+        color: #EC3637;
+      }
+    }
+
+    .content {
+      display: flex;
+
+      // .line {
+      //   height: ;
+      //   width: 1px;
+      //   background-color: red;
+      // }
+      
+      .navbar-item {
+        padding: 0 13px;
+        color: #000;
+        font-weight: bold;
+        transition-duration: .3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 32px;
+        border-right: 1px solid #E5E9EB;
+
+        &__icon {
+          margin-right: 5px;
+        }
+
+        &.active {
+          color: #0067F4;
+          // border-color: #0067F4;
+
+          &:hover {
+            color: #0067F4;
+          }
+        }
+
+        &:hover {
+          color: #EC3637;
+        }
+      }
+    }
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    border-right: 1px solid #E5E9EB;
+    padding: 0 20px 0 0;
+  }
+
+  .extra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+}
+.header_tab {
+  margin-left: 10px;
+  min-width: 150px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  
+  .header_tabLink {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #6E8BB7;
+    margin-left: 20px;
+    
+    &.active {
+      text-decoration: 4px underline;
+      text-underline-offset: 18px;
+      text-decoration-color: #0067F4;
+      color:#0067F4;
+    }
+
+  }
+}

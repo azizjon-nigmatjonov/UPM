@@ -1,0 +1,149 @@
+
+
+
+.LoginPage {
+  width: 100%;
+  display: flex;
+
+  .logo-side {
+    min-width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background: linear-gradient(183.06deg, #FFFFFF 0%, #EDF5FE 100%), #C4C4C4;
+  }
+
+  .form-side {
+    min-width: 50%;
+    height: 100vh;
+    overflow: auto;
+    flex: 1;
+    // background-color: #E9EEF4;
+    background-color: #DFEEFF;
+    padding: 24px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    .form-card {
+      width: 100%;
+
+      &-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+      }
+
+      .form {
+        padding: 24px;
+        padding-bottom: 14px;
+
+        .form-row {
+          margin-bottom: 10px;
+
+
+          .label {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 5px;
+          }
+        }
+
+        .forget-link {
+          color: #0067F4;
+          transform: translateY(-10px);
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+      }
+
+      .btn-area {
+        padding: 24px;
+        padding-top: 0;
+
+        .login-btn {
+          font-size: 16px;
+        }
+      }
+
+    }
+
+    .extra-card {
+      width: 100%;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .side {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;
+
+        .label {
+          color: #84919A;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+
+
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+.login-form {
+  .form-item {
+    border: 2px solid transparent;
+  }
+
+  .error {
+    label {
+      color: #ec5557;
+    }
+
+    .form-item {
+      border: 2px solid #ec5557;
+      animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    }
+  }
+}
+
+.login-company-name {
+  color: #6b6966;
+  font-weight: bold;
+  font-size: 35px;
+}

@@ -1,0 +1,23 @@
+.GanttPage {
+  position: relative;
+
+  .main-area {
+    flex: 1;
+    overflow: auto;
+    height: calc(100vh - 126px);
+    position: relative;
+
+    .main-section {
+      display: flex;
+      // overflow: scroll;
+      min-width: 28430px;
+
+      .left {
+        min-width: 500px;
+        position: sticky;
+        left: 0;
+        z-index: 12;
+      }
+    }
+  }
+}

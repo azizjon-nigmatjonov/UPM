@@ -1,0 +1,70 @@
+.EpicsBlock {
+  .row {
+    // min-height: 64px;
+    padding: 7px 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &.active {
+      background-color: #0166f3;
+      color: #fff;
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    &.level-1 {
+      background-color: #ebf7ff;
+    }
+
+    &.level-2 {
+      padding-left: 30px;
+      background-color: #fcf0ff;
+
+      .icon {
+        color: #7E10E5;
+      }
+    }
+
+    &.level-3 {
+      padding-left: 50px;
+      background-color: #ebfff1;
+
+      .icon {
+        color: #1AC19D;
+      }
+    }
+
+    &.level-4 {
+      padding-left: 70px;
+      background-color: #fffeeb;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.863);
+    }
+
+    &.level-5 {
+      padding-left: 80px;
+      background-color: #6e8bb747;
+    }
+
+    // &.level-6 {
+    //   padding-right: 100px;
+    //   background-color: #6E8BB70F;
+    // }
+
+    &-index {
+      padding: 0 10px;
+    }
+
+    &-label {
+      flex: 1;
+      white-space: pre-wrap;
+    }
+
+    &-btns {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

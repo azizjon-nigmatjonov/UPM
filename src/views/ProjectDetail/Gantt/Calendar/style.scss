@@ -1,0 +1,34 @@
+.GanttCalendar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  .calendar-row {
+    display: flex;
+  }
+
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -1px -1px 0px #e5e9eb;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .week-cell {
+    height: 35px;
+    // width: 266px;
+    background-color: #f6f8f9;
+  }
+  .day-cell {
+    height: 27px;
+    // width: 38px;
+
+    &.weekend {
+      color: #9aa6ac;
+    }
+  }
+}

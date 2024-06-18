@@ -1,0 +1,22 @@
+.buttonsWrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 130px;
+    button {
+        &:first-child {
+            min-width: 70% !important;
+        }
+        &:nth-child(2) {
+            transition: all 0.25s ease-in;
+            min-width: 30% !important;
+            background-color: rgba(14, 115, 246, 1) !important;
+            border-left:  1px solid #023997 !important;
+            &:hover, &:target {
+                background-color: rgba(12, 97, 207, 1) !important;
+                transition: all 0.25s ease-in;
+            }
+        }
+    }
+}

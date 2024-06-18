@@ -1,0 +1,68 @@
+.main {
+  padding: 6px;
+  display: flex;
+
+  .imageWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 250px;
+    height: 100%;
+    overflow-y: scroll;
+
+    .imageData {
+      display: flex;
+      gap: 12px;
+
+      .imageInfo {
+        .imageName {
+          color: #252c32;
+          font-weight: 400;
+          font-size: 14px;
+        }
+
+        .imageSize {
+          color: #84919a;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .imageActions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .imagePreview {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .comments {
+    max-height: 250px;
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
+
+.sideLayout {
+  width: 100%;
+  border: 1px solid #e5e9eb;
+  border-radius: 4px;
+
+  .head {
+    border-bottom: 1px solid #e5e9eb;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a2024;
+    padding: 16px;
+    text-transform: uppercase;
+  }
+
+  .content {
+    padding: 16px;
+  }
+}

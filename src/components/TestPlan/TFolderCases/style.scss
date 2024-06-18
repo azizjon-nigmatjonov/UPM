@@ -1,0 +1,107 @@
+@use "../../../scss/colors";
+
+.TFolderCases {
+  .folder {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    cursor: pointer;
+
+    .checkbox {
+      width: 18px;
+      height: 18px;
+      border: 1px solid colors.$lightGray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+    }
+    .checkbox.active {
+      background-color: colors.$primary;
+      color: white;
+      border: none;
+      svg {
+        width: 15px;
+      }
+    }
+    h1 {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.006em;
+      color: #252c32;
+    }
+    &.open {
+      background-color: #fafafa;
+    }
+    &.selected {
+      background-color: #eef0f2;
+    }
+    .open-icon {
+      transform: rotate(180) !important;
+    }
+    .folder-infos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .with-icons {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .icon-wrapper {
+      min-width: 20px;
+    }
+    .label {
+      color: #6E7C87;
+    }
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  .CaseInFolder {
+    margin: 4px 0;
+    padding: 4px 8px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+
+    &.selected {
+       background-color: #f7f8f9;
+    }
+
+    .label {
+      color: #6E7C87;
+    }
+  }
+}
+
+.checkboxMini {
+  width: 16px;
+  height: 16px;
+  border: 1px solid colors.$lightGray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.checkboxMini.active {
+  background-color: colors.$primary;
+  color: white;
+  border: none;
+  svg {
+    width: 11px;
+  }
+}

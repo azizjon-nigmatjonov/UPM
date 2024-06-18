@@ -1,0 +1,244 @@
+@use "/src/scss/colors";
+
+.modalHeader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    padding: 8px 0;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    color: colors.$baseBlack;
+    margin-right: 12px;
+  }
+  .text {
+    font-size: 12px;
+    font-weight: 600;
+    color: colors.$lightGray;
+  }
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #6e8bb7;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.slideBtns {
+  .btn {
+    border: 1px solid #f6f8f933;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+
+    svg {
+      font-size: 30px;
+    }
+  }
+  .leftBtn {
+    left: -70px;
+  }
+  .rightBtn {
+    right: -70px;
+  }
+}
+
+.btn {
+  &::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    bottom: 100%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80px 80px;
+    cursor: pointer;
+    content: "";
+  }
+}
+
+.leftBtn {
+  &:hover::before {
+    background-image: url(../../../../../../assets/icons/arrow-left.svg);
+  }
+  &::before {
+    right: calc(100% + 17px);
+  }
+}
+
+.rightBtn {
+  &:hover::before {
+    background-image: url(../../../../../../assets/icons/arrow-right.svg);
+  }
+  &::before {
+    left: calc(100% + 17px);
+  }
+}
+
+.tableHeading {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.crateOperator {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      color: colors.$baseBlack;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .status {
+      color: colors.$gray;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+  .modalDataWrapper {
+    max-height: 425px;
+    height: 100%;
+    overflow-y: scroll;
+    .list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 16px;
+      height: 100%;
+      overflow-y: scroll;
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid colors.$bordered;
+        padding: 14px 0;
+        &:last-child {
+          border: none;
+        }
+
+        .context {
+          display: flex;
+          align-items: center;
+
+          .index {
+            font-size: 14px;
+            font-weight: 500;
+            color: colors.$dark;
+          }
+
+          .arrow {
+            display: flex;
+            align-items: center;
+            margin-left: 16px;
+            color: colors.$gray;
+            font-size: 12px;
+            font-weight: 500;
+            color: colors.$gray;
+          }
+          .title {
+            color: colors.$primary;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .status {
+        p {
+          padding: 2px 12px;
+          border-radius: 6px;
+          font-weight: 600;
+          font-size: 14px;
+        }
+
+        .passed {
+          color: colors.$success;
+          background-color: colors.$successBackground;
+        }
+        .failed {
+          color: colors.$failed;
+          background-color: colors.$failedBackgroud;
+        }
+        .not_done {
+          color: colors.$gray;
+          background-color: colors.$disabled;
+        }
+      }
+    }
+  }
+}
+
+.textEnded {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .box {
+    border: 1px solid colors.$bordered;
+    padding: 16px 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h3 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: colors.$baseBlack;
+    }
+    h6 {
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: -0.006em;
+      font-weight: 400;
+      color: colors.$gray;
+    }
+  }
+}
+.iconBox {
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.check {
+    background-color: #38d9b9;
+  }
+  &.info {
+    background-color: #4094f7;
+  }
+  &.warn {
+    background-color: #f8c51b;
+  }
+}

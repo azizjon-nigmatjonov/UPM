@@ -1,0 +1,187 @@
+.GanttChart {
+  background-image: url("../../../../assets/images/background-column.png");
+  // background-size: 38px;
+  min-height: calc(100vh - 118px);
+  overflow: hidden;
+  .gantt-row {
+    height: 60px;
+    position: relative;
+    color: #000;
+
+    .today {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 100vh;
+      background-color: #ff0000;
+      z-index: 4;
+
+      &.first {
+        min-height: calc(100vh - 118px);
+        position: absolute;
+        top: -300px;
+      }
+    }
+    .flag {
+      position: absolute;
+      top: 300px;
+      &::before {
+        content: "Today";
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 24px;
+        border-radius: 0 5px 5px 0;
+        background-color: #ff0000;
+        color: #fff;
+      }
+    }
+
+    .expected-item,
+    .fact-item {
+      position: absolute;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .fact-item {
+      // border-style: solid;
+      border: none;
+      top: 6px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .side {
+        font-size: 16px;
+      }
+    }
+
+    .expected-item {
+      // border-style: solid;
+      border: none;
+      // border-width: 2px;
+      top: 12px;
+      height: 36px;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: grab;
+
+      &:active {
+        cursor: grabbing;
+      }
+
+      .label {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0 20px;
+      }
+    }
+
+    &.epic {
+      // .fact-item {
+        // background-color: #0066f42f;
+        // border-color: #63a0e7;
+      // }
+
+      .expected-item {
+        // background-color: #0066f42f;
+        // border-color: #367ed2;
+        // background-color: #4094f7;
+        color: #fff;
+      }
+    }
+
+    &.task {
+      .fact-item {
+        background-color: #eb99fa33;
+        border-color: #cc97fd;
+      }
+
+      .expected-item {
+        background-color: #eb99fa60;
+        border-color: #9b59da;
+      }
+    }
+
+    &.stage {
+      .fact-item {
+        background-color: #18c19c2a;
+        border-color: #63b6a4;
+      }
+
+      .expected-item {
+        background-color: #18c19c41;
+        border-color: #14a485;
+      }
+    }
+
+    &.subtask {
+      .fact-item {
+        background-color: #e4ca492a;
+        border-color: #e9d570;
+      }
+
+      .expected-item {
+        background-color: #e4ca494b;
+        border-color: #e4cb49;
+      }
+    }
+  }
+}
+
+.DynamicGanttItem {
+  .moveable-line {
+    display: none;
+  }
+
+  .moveable-control-box {
+    z-index: 0 !important;
+  }
+
+  .moveable-control {
+    width: 24px !important;
+    height: 40px !important;
+    margin-top: -20px !important;
+    border: none !important;
+    background-color: #e4cb49 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: url("../../../../assets/icons/drag-indicator.svg");
+      transform: translateY(2px);
+      fill: #fff;
+    }
+
+    &.moveable-w {
+      border-radius: 10px 0 0 10px !important;
+      margin-left: 0 !important;
+      z-index: 1;
+    }
+
+    &.moveable-e {
+      border-radius: 0 10px 10px 0 !important;
+      margin-left: -23px !important;
+    }
+  }
+
+  &.task {
+    .moveable-control {
+      background-color: #9b59da !important;
+    }
+  }
+}

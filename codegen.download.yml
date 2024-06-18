@@ -1,0 +1,8 @@
+schema:
+  - 'https://test.api.auth.upm.udevs.io/query'
+generates:
+  ./schema.graphql:
+    plugins:
+      - schema-ast
+    config:
+      includeDirectives: false

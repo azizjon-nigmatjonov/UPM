@@ -1,0 +1,65 @@
+[
+  {
+    "permission": "root",
+    "children": [
+      {
+        "permission": "users",
+        "scopes": [
+          {
+            "url": "/user",
+            "method": "GET"
+          }
+        ],
+        "children": [
+          {
+            "permission": "create",
+            "scopes": [
+              {
+                "url": "/user",
+                "method": "POST"
+              }
+            ]
+          },
+          {
+            "permission": "edit",
+            "scopes": [
+              {
+                "url": "/user/:id",
+                "method": "PUT"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "permission": "phases",
+        "scopes": [
+          {
+            "url": "/phase",
+            "method": "GET"
+          }
+        ],
+        "children": [
+          {
+            "permission": "create",
+            "scopes": [
+              {
+                "url": "/phase",
+                "method": "POST"
+              }
+            ]
+          },
+          {
+            "permission": "edit",
+            "scopes": [
+              {
+                "url": "/phase/:id",
+                "method": "PUT"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

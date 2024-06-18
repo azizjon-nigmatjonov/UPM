@@ -1,0 +1,11 @@
+.statusTitle {
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+  .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+}

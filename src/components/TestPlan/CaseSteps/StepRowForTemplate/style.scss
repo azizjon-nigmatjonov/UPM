@@ -1,0 +1,70 @@
+@use "../../../../scss/colors";
+
+.CaseStepRow {
+  padding: 8px 24px;
+  min-height: 52px;
+  border-bottom: 1px solid #e5e9ec;
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  background-color: #ffffff;
+  &.hovered {
+    background: #fafafa;
+  }
+  .is_hovering {
+    padding: 0 18.4px;
+  }
+  .step-row-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 8px;
+  }
+  .wrap-field-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .field-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      width: 80vh;
+    }
+    .status-wrapper,
+    .order,
+    .test-step-icon {
+      align-self: start;
+    }
+
+    .status-wrapper {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .case-title {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: -0.006em;
+      color: #0e73f6;
+      word-break: break-all;
+      flex: 1 0 700px;
+      cursor: text;
+      input {
+        all: unset;
+        width: 80vh;
+      }
+    }
+    .status-label {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: -0.006em;
+      color: #6e8bb7;
+      cursor: pointer;
+      &.result {
+        margin-left: 25px;
+      }
+    }
+  }
+}

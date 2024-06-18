@@ -1,0 +1,61 @@
+.ChecklistBlockNew {
+  .checklist {
+    .create-row {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .btns {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+    .rows-group {
+      margin: 12px 0;
+      .row {
+        padding: 0 2px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 4px;
+        .left {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          .checkbox {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            border: 1px solid #E5E5E5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            .check {
+              width: 16px;
+              height: 16px;
+              background: #00A8E8;
+              border-radius: 2px;
+              display: none;
+            }
+          }
+          .text {
+            font-size: 14px;
+            line-height: 20px;
+            color: #000000;
+          }
+        }
+      }
+    }
+    
+  }
+  .show-on-hover {
+    display: inline;
+  }
+  &:hover {
+    .show-on-hover {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.TShowBox {
+  .main-row {
+    height: 56px;
+    display: flex;
+    border-bottom: 1px solid #e5e9ec;
+    border-top: 1px solid #e5e9ec;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    // padding: 0 28px;
+    cursor: pointer;
+  }
+  .box-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .label {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6e8bb7;
+  }
+}

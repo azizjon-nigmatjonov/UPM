@@ -1,0 +1,25 @@
+.TasksCounter {
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  width: 72px;
+  text-align: center;
+
+  &.red {
+    background-color: #f76659;
+  }
+
+  &.yellow {
+    background-color: #f8dd4e;
+  }
+
+  &.blue {
+    background-color: #4094f7;
+  }
+
+  &.green {
+    background-color: #1ac19d;
+  }
+}

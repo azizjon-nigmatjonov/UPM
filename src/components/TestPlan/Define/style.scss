@@ -1,0 +1,25 @@
+.Define {
+  background-color: #fff;
+  display: flex;
+  align-self: center;
+  height: 87vh;
+  .left {
+    width: 25%;
+    min-width: 300px;
+    border-right: 2px solid #e5e9ec;
+    overflow: hidden;
+    .folder-title {
+      margin-left: 20px;
+    }
+    .folder-wrapper {
+      overflow-y: scroll;
+      height: 80vh;
+      border-top: 1px solid #e5e9ec;
+      padding-bottom: 20px;
+    }
+  }
+  .right {
+    width: 75%;
+    overflow: hidden;
+  }
+}

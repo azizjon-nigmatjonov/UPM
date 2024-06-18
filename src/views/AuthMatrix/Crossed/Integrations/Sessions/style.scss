@@ -1,0 +1,45 @@
+
+
+.SessionsPage {
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .SessionCreateForm {
+    margin-bottom: 20px
+  }
+}
+
+.TokenModal {
+  min-width: 800px;
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .form {
+    padding: 15px;
+
+    .row {
+      margin-bottom: 20px;
+    }
+
+    .btns-row {
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+  }
+}

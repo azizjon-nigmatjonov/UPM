@@ -1,0 +1,73 @@
+input CreateUserRequest {
+  active: Int!
+  client_platform_id: String!
+  client_type_id: String!
+  email: String!
+  expires_at: String!
+  login: String!
+  name: String!
+  password: String!
+  phone: String!
+  photo_url: String!
+  project_id: String!
+  role_id: String!
+}
+
+input GetUserListRequest {
+  client_platform_id: String
+  client_type_id: String
+  limit: Int
+  offset: Int
+  project_id: String
+  role_id: String
+  search: String
+}
+
+type GetUserListResponse {
+  count: Int!
+  users: [User!]!
+}
+
+type Mutation {
+  createUser(input: CreateUserRequest): User
+  deleteUser(id: String!): String!
+  updateUser(input: UpdateUserRequest): User
+}
+
+type Query {
+  getUserById(id: String!): User
+  getUserList(input: GetUserListRequest): GetUserListResponse
+}
+
+input UpdateUserRequest {
+  active: Int!
+  client_platform_id: String!
+  client_type_id: String!
+  email: String!
+  expires_at: String!
+  id: String!
+  login: String!
+  name: String!
+  phone: String!
+  photo_url: String!
+  project_id: String!
+  role_id: String!
+}
+
+type User {
+  active: Int!
+  client_platform_id: String!
+  client_type_id: String!
+  created_at: String!
+  email: String!
+  expires_at: String!
+  id: String!
+  login: String!
+  name: String!
+  password: String!
+  phone: String!
+  photo_url: String!
+  project_id: String!
+  role_id: String!
+  updated_at: String!
+}

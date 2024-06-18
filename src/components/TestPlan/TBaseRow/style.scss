@@ -1,0 +1,33 @@
+.TBaseRow {
+  padding: 12px 24px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  justify-content: space-between;
+  width: 100%;
+  .left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-right: none !important;
+  }
+  .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 12px;
+  }
+  .case-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  p {
+    font-weight: 500;
+  }
+}

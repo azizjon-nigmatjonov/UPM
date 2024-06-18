@@ -1,0 +1,1 @@
+export const arrayOfIds = (arr) => arr.map((el) => el.id)

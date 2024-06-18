@@ -1,0 +1,71 @@
+.CTableContainer {
+  width: 100%;
+  padding: 20px;
+
+  .table {
+    width: 100%;
+    overflow: auto;
+    border-radius: 8px;
+    border: 1px solid #e5e9eb;
+    position: relative;
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+
+      td {
+        border-bottom: 1px solid #e5e9eb;
+        border-left: 1px solid #e5e9eb;
+      }
+    }
+  }
+}
+
+.CTableHead {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 2;
+
+  tr td {
+    border-bottom: 1px solid #e5e9eb !important;
+    font-weight: bold;
+  }
+}
+
+.CTableCell {
+  padding: 16px 16px 14px 16px;
+}
+
+.CTableRow {
+  cursor: pointer;
+  transition-duration: 0.2s;
+
+  &:nth-of-type(odd) {
+    &:hover td {
+      background-color: #f5fbff;
+    }
+
+    td {
+      background-color: #f4f6fa;
+    }
+  }
+
+  &:hover {
+    background-color: rgba(#f5fbff, 1) !important;
+  }
+}
+
+.CTableBody {
+  position: relative;
+  z-index: 1;
+}
+.round_loader {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  margin: 0 auto;
+}

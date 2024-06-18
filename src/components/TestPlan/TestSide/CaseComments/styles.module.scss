@@ -1,0 +1,29 @@
+.caseComments {
+  .messages {
+    max-height: 221px;
+    height: 100%;
+    overflow: scroll;
+
+    .noComment {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+  .sendMessage {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+
+    form {
+      display: flex;
+      width: 100%;
+      gap: 6px;
+    }
+    // .authorImage {
+    //   width: 32px;
+    //   height: 32px;
+    //   border-radius: 50%;
+    // }
+  }
+}

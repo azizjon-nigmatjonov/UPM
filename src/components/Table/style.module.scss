@@ -1,0 +1,82 @@
+@use "../../scss/colors";
+.tableContainer {
+  .tableCell {
+    padding: 0;
+  }
+  .tableCellInner {
+    padding: 16px;
+  }
+  .tableHead {
+    .headCell {
+      background: white !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      .headItem {
+        color: colors.$textBlack;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .headItem.center {
+        display: flex;
+        align-items: center;
+      }
+
+      input {
+        color: colors.$textBlack;
+        font-size: 14px;
+        font-weight: 600;
+        border: none;
+        outline: none;
+        width: 100%;
+        background-color: transparent;
+      }
+
+      .headHoverActions {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        svg {
+          width: 18px;
+        }
+      }
+    }
+  }
+  .tableBody {
+    .bodyCell {
+      border-top: 1px solid colors.$bordered;
+      .bodyItem {
+        color: colors.$lightText;
+        font-size: 14px;
+        width: 100%;
+      }
+
+      input {
+        color: colors.$lightText;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.borderR {
+  border-right: 1px solid colors.$bordered;
+}
+.borderL {
+  border-left: 1px solid colors.$bordered;
+}
+
+.noData {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}

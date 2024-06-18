@@ -1,0 +1,10 @@
+.main-area {
+  border-top: 1px solid #e5e9ec;
+  overflow-y: scroll;
+  .add-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  }
+}

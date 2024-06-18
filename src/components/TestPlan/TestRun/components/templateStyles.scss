@@ -1,0 +1,146 @@
+.TemplateChart {
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #e5e9eb;
+    border-radius: 4px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+  
+    &:last-child {
+      margin-bottom: 58px;
+    }
+  
+    .pie-charts-wrapper {
+      display: flex;
+      align-items: center;
+      align-self: start;
+      width: 100%;
+      // justify-content: space-between;
+      .pie-chart {
+        width: 115px;
+        height: 115px;
+        text-align: center;
+        position: relative;
+        align-self: flex-start;
+        margin-right: 15px;
+        .overlay-center {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          pointer-events: none;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 32px;
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.019em;
+          color: #303940;
+        }
+      }
+      .pie-info {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .name {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: -0.006em;
+          color: #1a2024;
+          }
+          &.not-done {
+            color: #5b6871;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            .dot {
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #5b6871;
+            }
+          }
+        }
+        .bottom {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: -0.006em;
+          color: #5b6871;
+        }
+      }
+  
+      .authorSide {
+        width: 100%;
+        display: flex;
+        align-self: flex-start;
+        align-items: center;
+        flex-direction: column;
+  
+        .bottom {
+          white-space: nowrap;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: -0.006em;
+          color: #5b6871;
+          align-self: start;
+  
+          span {
+            color: #1a2024;
+            width: 100%;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  
+  
+  .TPieChart.singlePage {
+    height: auto;
+    padding: 16px;
+    .pie-info {
+      flex-direction: row;
+      padding-left: 10px;
+  
+      .statuses {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        margin-top: 4px;
+        gap: 12px;
+      }
+    }
+    .bottom {
+      white-space: nowrap;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: -0.006em;
+      color: #5b6871;
+      align-self: start;
+  
+      span {
+        color: #1a2024;
+        font-weight: 500;
+      }
+  
+      &:last-child {
+        margin-top: -8 px;
+      }
+    }
+  }
+  

@@ -1,0 +1,13 @@
+
+
+query UsersList {
+  getUserList {
+    users {
+        id
+        name
+        email
+        client_platform_id
+      }
+      count
+  }
+}

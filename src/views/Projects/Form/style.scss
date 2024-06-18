@@ -1,0 +1,43 @@
+
+
+.ProjectForm {
+  scroll-behavior: smooth;
+
+  .btns-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.MainInfoTab {
+  display: flex;
+  flex-wrap: wrap;
+
+  .side {
+    min-width: 50%;
+    // flex: 1;
+  }
+
+  .main-info-form {
+    display: flex;
+
+    .logo-side {
+      flex: 1;
+      margin-right: 10px;
+
+      .logo-block .block {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    .form-side {
+      flex: 2;
+      // background-color: red;
+    }
+  }
+
+  
+
+}

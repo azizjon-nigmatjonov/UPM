@@ -1,0 +1,102 @@
+.CommentMain {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  width: 100%;
+  &.reverse {
+    flex-direction: row;
+  }
+  .CommentsBlock {
+    .messages-area {
+      height: auto;
+      padding: 16px 0 0 28px;
+      background-color: transparent !important;
+    }
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+}
+
+.CommentsBlock {
+  .messages-area {
+    height: auto;
+    padding: 16px 0 0 28px;
+    background-color: transparent !important;
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.MessageFormNew {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  .text-input {
+    margin: 0 0 0 10px;
+  }
+}
+
+.Block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px;
+  width: 100%;
+
+  .Comment {
+    border: 1px solid #DDE2E4;
+    display: flex;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    min-height: 70px;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &.active {
+      background-color: #759effc2 !important;
+    }
+
+    &.own-comment {
+      margin-left: auto;
+      background-color: #aac4ff62;
+    }
+
+    .comment-block {
+      padding-left: 12px;
+      flex: 1;
+
+      .username {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 24px;
+      }
+
+      .date {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 8px;
+        color: #6e7c87;
+      }
+
+      .text {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+

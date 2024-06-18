@@ -1,0 +1,16 @@
+
+.MainLayout {
+  width: 100%;
+  display: flex;
+
+  .content-side {
+    flex: 1;
+    // background-color: #DFEEFF;
+    background-color: #E9EEF4;
+    position: relative;
+    height: 100vh;
+    overflow: auto;
+  }
+
+}
+

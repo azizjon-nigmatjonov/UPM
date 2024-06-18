@@ -1,0 +1,26 @@
+.items {
+  padding: 0 24px;
+  .item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: minmax(86px, auto) 1fr minmax(93px, auto);
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    .status {
+    }
+    .title {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: -0.006em;
+      color: #515151;
+    }
+    .date {
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: -0.006em;
+      color: rgba(81, 81, 81, 0.4);
+    }
+  }
+}

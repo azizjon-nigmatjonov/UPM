@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+
+    .left {
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid #e5e9ec;
+        border-right: 2px solid #e5e9ec;
+        height: 100vh;
+        width: 25%;
+        min-width: 300px;
+    }
+    .right {
+        width: 75%;
+        margin-top: 1px;
+
+        .pieWrapper {
+            width: 100%;
+            padding: 24px;
+        } 
+    }
+}

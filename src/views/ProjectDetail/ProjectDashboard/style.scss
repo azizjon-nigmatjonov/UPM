@@ -1,0 +1,18 @@
+
+
+.ProjectDashboard {
+
+  .count-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .count-block {
+    padding: 3px 12px;
+    color: #4094F7;
+    background-color: #4094F726;
+    border-radius: 28px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,272 @@
+.CTableHeadRow {
+  td {
+    white-space: nowrap;
+  }
+}
+
+.CTableRow {
+  td {
+    white-space: nowrap;
+  }
+}
+#status_notdone {
+  p {
+    // display: none;
+  width: 202px;
+  height: 32px !important;
+  background: #F2271C26;
+  color: #F2271C;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+}
+#status_done {
+  p {
+  width: 202px;
+  height: 32px !important;
+  background: #D7EDFF;
+  color: #0452C8;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+}
+.standUp_btn {
+  // background: #000;
+  width: 28px;
+  height: 28px;
+  background: #FFFFFF;
+  border: 1px solid #E5E9EB;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.FiltersBlock {
+  
+  .MuiInputLabel-root {
+    color:rgb(163, 159, 159) !important;
+    font-weight: 550 !important;
+    font-size: 14px !important;
+    position: absolute !important;
+    bottom: 20px !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 20px !important;
+    top: -5px !important;
+  }
+}
+.date_picker {
+  position: relative;
+}
+.PrivatePickersSlideTransition-root {
+  // display: none !important;
+  min-height: 195px !important;
+}
+.MuiPaper-root {
+  min-width: 380px !important;
+}
+.date_picker_calendar {
+  position: absolute;
+  right: 25px;
+  background: none;
+  border: none;
+  outline: none;
+  top: 20px;
+  cursor: pointer;
+  
+}
+.dateClear_btn {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 55px;
+  top: 13px;
+  cursor: pointer;
+}
+.table_filter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  // margin-left: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 6px;
+  // padding: 15px;
+  margin: 0 0 0 0 !important;
+  
+  span {
+    display: block !important;
+    margin-left: 10px;
+  }
+}
+.menu_item {
+  // display: none;
+  min-width: 180px !important;
+  padding: 0px 0 10px 0;
+  .date_picker {
+    display: none;
+  }
+  input {
+    max-width: 180px;
+    border-color: #ccc;
+    outline: none;
+    box-shadow: none !important;
+    padding-left: 10px;
+  }
+}
+.MuiPaper-root {
+  min-width: 180px !important;
+}
+.menu {
+  top: 25px !important;
+  left: -100px;
+}
+
+.css-1jjkm6i-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper, .css-1s6e87f {
+  overflow-y: inherit !important;
+  overflow-x: inherit !important;
+}
+.css-6hp17o-MuiList-root-MuiMenu-list, .css-1s6e87f {
+  padding: 2px 10px 2px 10px;
+}
+.css-ko4yvp-MuiFormControl-root-MuiTextField-root input {
+  height: 10px;
+}
+.title_name {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasks_cell {
+  // text-overflow: ellipsis;
+  overflow: hidden; 
+  width: 160px; 
+  // height: 1.2em; 
+  // white-space: nowrap;
+}
+.CTableContainer {
+  padding: 0 0 20px 0 !important;
+  border: none !important;
+}
+.table {
+  border: none !important;
+  border-radius: 0px !important;
+}
+.dateClear_btn {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 5px !important;
+  top: 15px !important;
+  cursor: pointer;
+}
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  padding: 0 !important;
+}
+.react-calendar {
+  border: none !important;
+  border-radius: 8px;
+  top: 10px !important;
+}
+.date_picker {
+  position: relative;
+  z-index: 1;
+  
+  .calendar_btn {
+    height: 36px;
+    width: 160px;
+    margin: 6px 0 6px 0;
+    padding-right: 15px;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.reportPlan {
+  gap: 4px;
+  width: 257px;
+  margin-bottom: 10px;
+  padding: 10px 0 0 0;
+    button {
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 0 0;
+    border-radius: 5px;
+    height: 30px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover {
+      background: #ccc;
+    }
+  }
+}
+.projects_filter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.round_loader {
+  position: absolute;
+  top: 200px;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.clear_btn {
+  background: #fff;
+  border-radius: 6px;
+  button {
+    height: 35px;
+    border: none;
+    background: #fff;
+    border-radius: 6px;
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    span {
+      margin-left: 4px;
+    }
+  }
+}
+
+#multi_select {
+  .css-1r4vtzz, .css-48ayfv {
+    width: 92%;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    box-shadow: none;
+  }
+  
+  .css-4ljt47-MenuList, .css-11unzgr {
+    padding: 10px;
+    max-height: 225px;
+    
+    div {
+      font-size: 14px;
+      margin: 5px 0;
+      cursor: pointer;
+      padding: 5px;
+      
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}
